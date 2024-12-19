@@ -1,11 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35506.116 d17.12
+VisualStudioVersion = 17.12.35506.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sjuan", "Sjuan", "{66AA64FF-5BD5-4E5E-ADB4-F14EDEAB9B48}"
 	ProjectSection(SolutionItems) = preProject
 		Index.html = Index.html
+		Notes.txt = Notes.txt
 		Script.js = Script.js
 		Styles.css = Styles.css
 	EndProjectSection

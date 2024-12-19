@@ -1,0 +1,2 @@
+Ta bort div från varje img
+Fixa click event
