@@ -11,6 +11,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sjuan", "Sjuan", "{66AA64FF
 		Styles.css = Styles.css
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0A0A3301-FC6B-46B2-B464-152AF85611CF}"
+	ProjectSection(SolutionItems) = preProject
+		GitAccess.txt = GitAccess.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
