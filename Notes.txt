@@ -1,2 +1,7 @@
-Ta bort div från varje img
-Fixa click event
+Fixa vad som händer när man klickar i mitten eller så på en vald samling av kort
+
+
+Fixa barkgrundskort när man tagit sista kortet och att man kan flytta kungar dit
+
+
+Fixa att tahögen resettas när den är slut
