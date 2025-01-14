@@ -299,6 +299,8 @@ function RemoveBorder(img)
 //Function that is called when a card in the card piles is clicked
 function ClickedCardPile(img) {
 
+    if (ClickedImages.length > 0 && img.parentElement === ClickedImages[0].parentElement) { return; } //If the selected cards and the clicked card is in the same pile, return false)
+
     //Checks if the card is revealed. (Only revealed cards can be clicked))
     if (img.cardData.isRevealed) {
         //If the card is not clicked, check if the selected cards can be moved,
@@ -346,6 +348,7 @@ function addCarddataToEmptyImg(img) {
 function checkIfCanMove(img) {
 
     if (ClickedImages.length <= 0) { return false; } //If there are no selected cards, return false
+
 
     if (IsColorpile(ClickedImages[0].parentElement)) {
         if (ClickedImages.length === 1) {
