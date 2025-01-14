@@ -1,3 +1,7 @@
+Fixa bild när tahögen är tom
+Fixa automatiskt drag vid klick på kort
+Fixa bätte logik för var kortet är
+
 Fixa vad som händer när man klickar i mitten eller så på en vald samling av kort
 
 

@@ -9,9 +9,10 @@
 
 }
 
-.takediscardpile {
-    width: 100px;
-    height: 144px;
+.discardpiles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .colorpiles {
@@ -21,6 +22,21 @@
     gap: 60px;
     margin-right: 140px;
 }
+
+.imgsize {
+    width: 100px; /* Set the desired width of the div */
+    height: 144px; /* Set the desired height of the div */
+    display: flex; /* Optional: Center the image */
+    justify-content: center; /* Optional: Center the image */
+    align-items: center; /* Optional: Center the image */
+    /*overflow: hidden;*/  
+}
+
+     img {
+        height: 144px;
+        width: 100px;
+        object-fit: cover;
+    }
 
 .colorpile {
     /*display: flex;
@@ -34,8 +50,7 @@
 }
 
 .playingcard {
-    height: 144px;
-    width: 100px;
+
     position: absolute;
 }
 
