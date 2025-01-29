@@ -1,11 +1,16 @@
+
+
+
+Klart:
 Fixa bild när tahögen är tom
 Fixa automatiskt drag vid klick på kort
 Fixa bätte logik för var kortet är
-
 Fixa vad som händer när man klickar i mitten eller så på en vald samling av kort
-
-
 Fixa barkgrundskort när man tagit sista kortet och att man kan flytta kungar dit
-
-
 Fixa att tahögen resettas när den är slut
+Fixa att style.top funkar när flera kort flyttas
+Fixa att flera markerade kort flyttar på sig
+Fixa att den kollar efter vinst
+Fixa timer och autospel
+Fixa att den flyttar ess
+Fixa att den flyttar till färghögen även om det finns flera visade kort

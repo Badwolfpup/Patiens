@@ -1,18 +1,134 @@
-﻿body
-{
-    
+﻿/* Styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll when the menu opens */
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    position: fixed; /* Fix the header at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 160px;
+    z-index: 2; /* Ensure the header stays above the menu */
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 3; /* Ensure the hamburger icon is above the menu */
+}
+
+    .hamburger .line {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 4px 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+.nav-links {
+    position: fixed; /* Fixed position for the sidebar */
+    top: 0;
+    left: -250px; /* Hide the menu off-screen initially */
+    width: 250px; /* Width of the sidebar */
+    height: 100vh; /* Full height of the viewport */
+    background-color: #333;
+    transition: left 0.3s ease-in-out; /* Smooth slide animation */
+    z-index: 1; /* Ensure the menu is below the header */
+}
+
+    .nav-links ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-top: 60px; /* Adjust based on header height */
+    }
+
+        .nav-links ul li {
+            padding: 15px 20px;
+        }
+
+            .nav-links ul li a {
+                color: white;
+                text-decoration: none;
+                font-size: 18px;
+            }
+
+    /* Active state for the menu */
+    .nav-links.active {
+        left: 0; /* Slide the menu into view */
+    }
+
+/* Push the main content to the right when the menu is active */
+.main-container.active {
+    transform: translateX(250px); /* Shift content by the width of the menu */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Add margin between the header and the main container */
+#main-container {
+    margin-top: 60px; /* Adjust this value based on the height of your header */
+}
+
+/* Optional: Transform hamburger into an "X" when active */
+.hamburger.active .line:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.active .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .line:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+.startbtn {
+    background: #0078D4;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px #c2c8d4;
+    padding: 12px 24px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 5px;
+    font-size: 1rem;
+    height: 30px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+    .startbtn:hover {
+        background: linear-gradient(145deg, #e8ecf3, #ffffff);
+        box-shadow: 2px 2px 4px #c2c8d4, -2px -2px 4px #ffffff;
+        color: black;
+    }
+
+    .startbtn:active {
+        background: linear-gradient(145deg, #d6dae3, #f0f4fa);
+        box-shadow: inset 2px 2px 4px #c2c8d4, inset -2px -2px 4px #ffffff;
+    }
 
 .discardpile {
     margin-left: 30px;
-
 }
 
 .discardpiles {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 20px;
 }
 
 .colorpiles {
@@ -29,14 +145,14 @@
     display: flex; /* Optional: Center the image */
     justify-content: center; /* Optional: Center the image */
     align-items: center; /* Optional: Center the image */
-    /*overflow: hidden;*/  
+    /*overflow: hidden;*/
 }
 
-     img {
-        height: 144px;
-        width: 100px;
-        object-fit: cover;
-    }
+img {
+    height: 144px;
+    width: 100px;
+    object-fit: cover;
+}
 
 .colorpile {
     /*display: flex;
@@ -50,15 +166,13 @@
 }
 
 .playingcard {
-
     position: absolute;
 }
 
 .cardpile {
-/*    width: 110px;
+    /*    width: 110px;
     height: 250px;*/
     position: relative;
-
 }
 
 .top-container {
@@ -78,10 +192,9 @@
 }
 
 
+
 .tempdiv {
-/*    border: 3px solid red;
+    /*    border: 3px solid red;
     z-index: 10;
     position: absolute;*/
 }
-
-
