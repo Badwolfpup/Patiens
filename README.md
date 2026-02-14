@@ -1,6 +1,6 @@
 # Patiens
 
-A solitaire card game built with vanilla JavaScript, HTML, and CSS. "Patiens" is Swedish for Solitaire. Includes unit tests.
+A solitaire card game built with vanilla JavaScript, HTML, and CSS. "Patiens" is Swedish for "Patience" (solitaire). Includes unit tests.
 
 ## Technologies
 
@@ -17,11 +17,11 @@ A solitaire card game built with vanilla JavaScript, HTML, and CSS. "Patiens" is
 
 ```
 Patiens/
-â”œâ”€â”€ Index.html          # Game page
-â”œâ”€â”€ Script.js           # Game logic
-â”œâ”€â”€ Script.test.js      # Unit tests
-â”œâ”€â”€ Styles.css          # Styling
-â””â”€â”€ Spelkort/           # Card images
+├── Index.html          # Game page
+├── Script.js           # Game logic
+├── Script.test.js      # Unit tests
+├── Styles.css          # Styling
+└── Spelkort/           # Card images
 ```
 
 ## How to Run
