@@ -17,11 +17,11 @@ A solitaire card game built with vanilla JavaScript, HTML, and CSS. "Patiens" is
 
 ```
 Patiens/
-├── Index.html          # Game page
-├── Script.js           # Game logic
-├── Script.test.js      # Unit tests
-├── Styles.css          # Styling
-└── Spelkort/           # Card images
++-- Index.html          # Game page
++-- Script.js           # Game logic
++-- Script.test.js      # Unit tests
++-- Styles.css          # Styling
++-- Spelkort/           # Card images
 ```
 
 ## How to Run
